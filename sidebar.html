@@ -1,0 +1,50 @@
+<header>
+	<nav class="top-nav">
+		<div class="container">
+			<div class="nav-wrapper"><a class="page-title"></a></div>
+		</div>
+	</nav>
+	<div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+	<ul id="nav-mobile" class="side-nav fixed">
+		<li class="logo">
+			<div class="logo-adj">
+				<h3 class="header"><b>Wordesc</b></h3>
+			</div>
+		</li>
+		<li class="search">
+			<div class="search-wrapper card">
+				<input id="search" placeholder="Search"><i class="material-icons">search</i>
+				<div class="search-results"></div>
+			</div>
+		</li>
+		<br>
+		<li id="goto_read" class="active"><a class="waves-effect waves-teal" onclick="goto_read()"><i class="material-icons">library_books</i>Read</a></li>
+		<li id="goto_describe"><a class="waves-effect waves-teal" onclick="goto_describe()">Describe<i class="material-icons">mode_edit</i></a></li>
+		<li id="goto_notif"><a class="waves-effect waves-teal" href="#">Notifications<i class="material-icons">add_alert</i></a></li>
+		<div id="profile_name"><li id="goto_profile"><a class="waves-effect waves-teal" href="#">Profile<i class="material-icons">perm_identity</i></a></li></div>
+		<li id="goto_logout"><a class="waves-effect waves-teal" onclick="logout()">Logout<i class="material-icons">settings_power</i></a></li>
+		<li><div class="divider"></div></li>
+		<li id="goto_about"><a class="waves-effect waves-teal" href="#">About<i class="material-icons">info_outline</i></a></li>
+		<li id="goto_privpol"><a class="waves-effect waves-teal" href="#">Privacy Policy<i class="material-icons">lock</i></a></li>
+		<li id="goto_contact"><a class="waves-effect waves-teal" href="#">Contact Us<i class="material-icons">call</i></a></li>
+	</ul>
+</header>
+<footer>
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large red">
+        <i class="material-icons">list</i>
+      </a>
+      <ul>
+      	<li><a class="btn-floating purple"><i class="material-icons">search</i></a></li>
+        <li><a class="btn-floating red" onclick="goto_read()"><i class="material-icons">library_books</i></a></li>
+        <li><a class="btn-floating yellow darken-1" onclick="goto_describe()"><i class="material-icons">mode_edit</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">add_alert</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">perm_identity</i></a></li>
+        <li><a class="btn-floating grey" onclick="logout()"><i class="material-icons">settings_power</i></a></li>
+      </ul>
+    </div>
+    <br>
+</footer>
+<script type="text/javascript" src="js/logout.js"></script>
+<script type="text/javascript" src="js/fname.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>

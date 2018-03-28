@@ -1,0 +1,91 @@
+<div class="container">
+	<div id="login-signup">
+		<center>
+			<h1 class="header">Wordesc</h1>
+			<p class="caption">
+				The best description to any word.
+			</p>
+		</center>
+		<div class="row">
+			<div class="col s3"></div>
+			<div class="col s12 m6">
+				<div class="card" style="padding:10px;">
+					<div class="card-title">
+						<center><h5 class="header">Signup or Login</h5></center>
+					</div>
+					<div class="card-content">
+						<center><div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" id="google-signin-btn"></div></center>
+						<br><hr>
+					</div>
+					<div class="card-title">
+						<center><h5 class="header">Login using Credentials</h5></center>
+					</div>
+					<div class="card-content">
+						<form onsubmit="return false;">
+							<div class="row">
+								<div class="input-field col s12 m6">
+									<input id="email" type="email" required>
+									<label for="email">Email</label>
+								</div>
+								<div class="input-field col s12 m6">
+									<input id="password" type="password" required>
+									<label for="password">Password</label>
+								</div>
+							</div>
+							<center><button class="waves-effect waves-light btn" onclick="login()" id="login-btn">Login</button></center>
+							<div id="email-pass-feedback-loader" hidden>
+								<center>
+									<div class="preloader-wrapper active">
+								      <div class="spinner-layer spinner-blue">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-red">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-yellow">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-green">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+								    </div>
+								</center>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/googlesignin.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>

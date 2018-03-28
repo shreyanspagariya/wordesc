@@ -1,0 +1,78 @@
+<main>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m9 l9">
+				<p class="caption">
+					Describe a Word
+				</p><hr><br><br>
+				<div id="add_description">
+					<div class="row">
+				    	<form class="col s12" onsubmit="return false;">
+							<div class="row">
+								<div class="input-field col s12 m6">
+									<input id="word" type="text">
+									<label for="word">Word</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<textarea id="description" class="materialize-textarea" length="200"></textarea>
+									<label for="description">Description</label>
+								</div>
+							</div>
+							<center><button class="waves-effect waves-light btn" onclick="add_describe()" id="describe-btn">Done</button></center>
+							<div id="describe-feedback-loader" hidden>
+								<br>
+								<center>
+									<div class="preloader-wrapper active">
+								      <div class="spinner-layer spinner-blue">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-red">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-yellow">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+
+								      <div class="spinner-layer spinner-green">
+								        <div class="circle-clipper left">
+								          <div class="circle"></div>
+								        </div><div class="gap-patch">
+								          <div class="circle"></div>
+								        </div><div class="circle-clipper right">
+								          <div class="circle"></div>
+								        </div>
+								      </div>
+								    </div>
+								</center>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script type="text/javascript" src="js/describe.js"></script>
